@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// CLass that handles the set up of the GUI to show a GUIContent
+/// </summary>
 public class GUIManager : MonoBehaviour
 {
     [SerializeField]
@@ -21,15 +24,19 @@ public class GUIManager : MonoBehaviour
         UpdateContent();
     }
 
+    /// <summary>
+    /// Updates the content shown by the GUI
+    /// </summary>
     public void UpdateContent()
     {
+        // Clean old content
         if (_dataContainer.childCount > 0)
         {
-            Debug.Log("Reload");
             for (int i = 0; i < _dataContainer.childCount; i++)
                 Destroy(_dataContainer.GetChild(i).gameObject);
         }
 
+        // Create new GUI
         _content.LoadFromJSON();
         _title.text = _content.Title;
 

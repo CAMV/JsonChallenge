@@ -3,13 +3,19 @@ using System.Collections.Generic;
 using System.IO;
 using System;
 
-
+/// <summary>
+/// Content tha a GUI matrix shows
+/// </summary>
 public class GUIContent 
 {
     public string Title;
     public string[] ColumnHeaders;
     public string[,] Data;
 
+    /// <summary>
+    /// Initialize the values of the GUIContent with a JSON in Streaming Assets
+    /// named "JsonChallenge.json"
+    /// </summary>
     public void LoadFromJSON()
     {
         string filePath = Application.streamingAssetsPath;

@@ -5,15 +5,13 @@
         "ID",
         "Name",
         "Role",
-        "Nickname",
-        "Party"
+        "Nickname"
     ],
     "Data" :
     [
         {
             "ID" : "001",
             "Name" : "John Doe",
-            "Party" : "D",
             "Role" : "Engineer",
             "Nickname" : "KillerJo"
         },
@@ -21,29 +19,19 @@
             "ID" : "023",
             "Name" : "Claire Dawn",
             "Role" : "Engineer",
-            "Nickname" : "Claw",
-            "Party" : "R"
+            "Nickname" : "Claw"
         },
         {
             "ID" : "012",
             "Name" : "Paul Beef",
             "Role" : "Designer",
-            "Nickname" : "BeefyPaul",
-            "Party" : "D"
+            "Nickname" : "BeefyPaul"
         },
         {
             "ID" : "056",
             "Name" : "Sally Sue",
             "Role" : "Artist",
-            "Nickname" : "Sue5555",
-            "Party" : "R"
-        },
-        {
-            "ID" : "777",
-            "Name" : "Cristian Medina",
-            "Role" : "Engineer",
-            "Nickname" : "WaunMan",
-            "Party" : "D"
+            "Nickname" : "Sue5555"
         }
     ]
 }
